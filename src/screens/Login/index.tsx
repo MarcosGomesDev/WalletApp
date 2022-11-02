@@ -14,6 +14,9 @@ import {
     Title,
     Description,
     ViewButton,
+    ButtonSignUp,
+    TitleButtonSignUp1,
+    TitleButtonSignUp2
 } from './styles';
 
 const Login: React.FC = () => {
@@ -29,7 +32,6 @@ const Login: React.FC = () => {
     }
 
     return (
-        <SafeAreaView style={{paddingTop: Platform.OS === 'ios' ? 0 : StatusBar.currentHeight}}>
             <Container>
                 <ContentHeader>
                     <Title>Seja bem vindo(a) {"\n"} a WalletApp</Title>
@@ -43,7 +45,6 @@ const Login: React.FC = () => {
                 </ContentHeader>
 
                 <ContentBody>
-                </ContentBody>
                     <Input
                         LeftIcon
                         iconSize={25}
@@ -71,11 +72,14 @@ const Login: React.FC = () => {
                         onPress={onPressButton}
                         style={{marginBottom: 20}}
                     />
+                </ContentBody>
                 <ContentFooter>
-
+                    <ButtonSignUp>
+                        <TitleButtonSignUp1>Não tem cadastro ainda?</TitleButtonSignUp1>
+                        <TitleButtonSignUp2> Cadastre-se</TitleButtonSignUp2>
+                    </ButtonSignUp>
                 </ContentFooter>
             </Container>
-        </SafeAreaView>
     );
 }
 

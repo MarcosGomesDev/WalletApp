@@ -4,12 +4,13 @@ import styled from 'styled-components/native';
 
 export const Container = styled(TouchableOpacity)`
     background-color: ${({theme}: any) => theme.COLORS.PURPLE1};
-    width: 100%;
-    height: 50px;
+    width: 60%;
+    height: 65px;
+    align-self: center;
     align-items: center;
     justify-content: center;
     margin-top: ${RFValue(15)}px;
-    border-radius: ${RFValue(8)}px;
+    border-radius: ${RFValue(15)}px;
 `;
 
 export const Title = styled.Text`
