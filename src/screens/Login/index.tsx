@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Platform, SafeAreaView, StatusBar } from 'react-native';
+import { KeyboardAvoidingView, ScrollView } from 'react-native';
 import {useTheme} from 'styled-components'
 import Input from 'components/Input';
 import ButtonCustom from 'components/ButtonCustom';
@@ -16,7 +16,10 @@ import {
     ViewButton,
     ButtonSignUp,
     TitleButtonSignUp1,
-    TitleButtonSignUp2
+    TitleButtonSignUp2,
+    ContentForgotPassword,
+    ContentButtonForgotPassword,
+    ContentTitleForgotPassword
 } from './styles';
 
 const Login: React.FC = () => {
@@ -32,6 +35,10 @@ const Login: React.FC = () => {
     }
 
     return (
+        <KeyboardAvoidingView
+            behavior='position'
+            enabled
+        >
             <Container>
                 <ContentHeader>
                     <Title>Seja bem vindo(a) {"\n"} a WalletApp</Title>
@@ -66,6 +73,12 @@ const Login: React.FC = () => {
                         placeholder="Digite sua senha"
                     />
 
+                    <ContentForgotPassword>
+                        <ContentButtonForgotPassword onPress={() => {}}>
+                            <ContentTitleForgotPassword>Esqueceu a senha?</ContentTitleForgotPassword>
+                        </ContentButtonForgotPassword>
+                    </ContentForgotPassword>
+
                     <ButtonCustom
                         title="Entrar"
                         variant='primary'
@@ -74,12 +87,13 @@ const Login: React.FC = () => {
                     />
                 </ContentBody>
                 <ContentFooter>
-                    <ButtonSignUp>
-                        <TitleButtonSignUp1>Não tem cadastro ainda?</TitleButtonSignUp1>
+                    <ButtonSignUp onPress={() => {}}>
+                        <TitleButtonSignUp1>Não possuí cadastro?</TitleButtonSignUp1>
                         <TitleButtonSignUp2> Cadastre-se</TitleButtonSignUp2>
                     </ButtonSignUp>
                 </ContentFooter>
             </Container>
+        </KeyboardAvoidingView>
     );
 }
 

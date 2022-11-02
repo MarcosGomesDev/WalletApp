@@ -9,7 +9,7 @@ export const Container = styled(TouchableOpacity)`
     align-self: center;
     align-items: center;
     justify-content: center;
-    margin-top: ${RFValue(15)}px;
+    margin-top: ${RFValue(10)}px;
     border-radius: ${RFValue(15)}px;
 `;
 
