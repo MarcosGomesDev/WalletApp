@@ -19,13 +19,15 @@ export const Title = styled.Text`
     text-align: center;
     font-size: 35px;
     margin-top: 40px;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
+    font-family: ${theme.FONTS.POPPINSMEDIUM};
 `;
 
 export const Description = styled.Text`
     font-size: 15px;
     margin-top: 60px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
+    font-family: ${theme.FONTS.POPPINSEXTRABOLD};
 `;
 
 export const ContentBody = styled.View`
@@ -52,11 +54,13 @@ export const ButtonFooter = styled(TouchableOpacity)`
 `;
 
 export const Title1 = styled.Text`
-    font-size: 16px;
-    color: ${theme.COLORS.GRAY4}
+    font-size: 14px;
+    font-family: ${theme.FONTS.POPPINSMEDIUM};
+    color: ${theme.COLORS.GRAY4};
 `;
 
 export const Title2 = styled.Text`
-    font-size: 17px;
-    color: ${theme.COLORS.BLUE2}
+    font-size: 15px;
+    font-family: ${theme.FONTS.POPPINSMEDIUM};
+    color: ${theme.COLORS.BLUE2};
 `;

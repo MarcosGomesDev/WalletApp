@@ -20,9 +20,11 @@ export const Button = styled(TouchableOpacity).attrs({
 export const IconGoogle = styled.Image`
     width: ${RFValue(25)}px;
     height: ${RFValue(25)}px;
+    margin-top: -2px;
 `;
 
 export const Title = styled.Text`
     font-size: ${RFValue(17)}px;
+    font-family: ${theme.FONTS.POPPINSLIGHT};
     margin-left: ${RFValue(10)}px;
 `;

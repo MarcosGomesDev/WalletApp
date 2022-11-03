@@ -20,11 +20,13 @@ export const Button = styled(TouchableOpacity).attrs({
 
 export const IconFacebook = styled(Icon)`
     font-size: ${RFValue(20)}px;
+    margin-top: -5px;
     color: ${theme.COLORS.WHITE};
 `;
 
 export const Title = styled.Text`
     color: ${theme.COLORS.WHITE};
     font-size: ${RFValue(17)}px;
+    font-family: ${theme.FONTS.POPPINSLIGHT};
     margin-left: ${RFValue(10)}px;
 `;

@@ -22,4 +22,5 @@ export const InputContainer = styled.TextInput`
     height: 50px;
     border-radius: 8px;
     font-size: 16px;
+    font-family: ${theme.FONTS.POPPINSLIGHT};
 `;

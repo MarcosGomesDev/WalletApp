@@ -16,21 +16,23 @@ export const ContentHeader = styled.View`
 export const Title = styled.Text`
     text-align: center;
     font-size: 25px;
+    font-family: ${theme.FONTS.POPPINSMEDIUM};
     margin-top: 80px;
 `;
 
 export const Description = styled.Text`
     margin-top: 80px;
     font-size: 20px;
+    font-family: ${theme.FONTS.POPPINSBOLD};
     margin-bottom: 10px;
 `;
 
 export const ContentBody = styled.View`
-    margin-top: 90px;
+    margin-top: 60px;
 `;
 
 export const ContentFooter = styled.View`
-    margin-top: 80px;
+    margin-top: 60px;
     align-items: center;
     justify-content: center;
 `;
@@ -43,10 +45,12 @@ export const ButtonGoBack = styled(TouchableOpacity)`
 
 export const Title1 = styled.Text`
     font-size: 14px;
+    font-family: ${theme.FONTS.POPPINSMEDIUM};
     color: ${theme.COLORS.GRAY3}
 `;
 
 export const Title2 = styled.Text`
-    font-size: 17px;
+    font-size: 15px;
+    font-family: ${theme.FONTS.POPPINSBOLD};
     color: ${theme.COLORS.BLUE2}
 `;

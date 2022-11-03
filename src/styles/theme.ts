@@ -107,12 +107,12 @@ export default {
     },
 
     FONTS: {
-        TEXT: 'DMSans_400Regular',
-        POPPINSBOLD: 'Poppins_700Bold',
-        POPPINSLIGHT: 'Poppins_300Light',
-        POPPINSMEDIUM: 'Poppins_500Medium',
-        TITLE: 'DMSerifDisplay_400Regular',
-        POPPINSREGULAR: 'Poppins_400Regular',
-        POPPINSEXTRABOLD: 'Poppins_800ExtraBold',
+        TEXT: 'DMSans-Regular',
+        POPPINSBOLD: 'Poppins-Bold',
+        POPPINSLIGHT: 'Poppins-Light',
+        POPPINSMEDIUM: 'Poppins-Medium',
+        TITLE: 'DMSerifDisplay-Regular',
+        POPPINSREGULAR: 'Poppins-Regular',
+        POPPINSEXTRABOLD: 'Poppins-ExtraBold',
     },
 };

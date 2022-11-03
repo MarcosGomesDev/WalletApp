@@ -25,11 +25,19 @@ export const ViewButton = styled.View`
     flex-direction: row;
 `;
 
+export const Title = styled.Text`
+    text-align: center;
+    margin-top: ${RFValue(40)}px;
+    font-size: ${RFValue(25)}px;
+    font-family: ${theme.FONTS.POPPINSMEDIUM};
+`;
+
 export const Description = styled.Text`
     text-align: center;
     margin-top: ${RFValue(60)}px;
     font-size: ${RFValue(17)}px;
     margin-bottom: ${RFValue(30)}px;
+    font-family: ${theme.FONTS.POPPINSLIGHT};
 `;
 
 export const ContentFooter = styled.View`
@@ -46,19 +54,15 @@ export const ButtonSignUp = styled(TouchableOpacity)`
 `;
 
 export const TitleButtonSignUp1 = styled.Text`
-    font-size: 16px;
-    color: ${theme.COLORS.GRAY4}
+    font-size: 14px;
+    font-family: ${theme.FONTS.POPPINSMEDIUM};
+    color: ${theme.COLORS.GRAY4};
 `;
 
 export const TitleButtonSignUp2 = styled.Text`
-    font-size: 17px;
-    color: ${theme.COLORS.BLUE2}
-`;
-
-export const Title = styled.Text`
-    text-align: center;
-    margin-top: ${RFValue(40)}px;
-    font-size: ${RFValue(25)}px;
+    font-size: 15px;
+    font-family: ${theme.FONTS.POPPINSMEDIUM};
+    color: ${theme.COLORS.BLUE2};
 `;
 
 export const ContentForgotPassword = styled.View`
@@ -73,5 +77,7 @@ export const ContentButtonForgotPassword = styled(TouchableOpacity)`
 
 export const ContentTitleForgotPassword = styled.Text`
     text-align: right;
-    color: ${theme.COLORS.BLUE2}
+    color: ${theme.COLORS.BLUE2};
+    font-size: 13px;
+    font-family: ${theme.FONTS.POPPINSREGULAR};
 `;
