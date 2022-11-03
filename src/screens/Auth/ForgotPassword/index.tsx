@@ -1,10 +1,5 @@
 import React from 'react';
 
-import Input from 'components/Input';
-import ButtonCustom from 'components/ButtonCustom';
-
-import { useTheme } from 'styled-components';
-
 import {
     Container,
     ContentHeader,
@@ -16,6 +11,11 @@ import {
     Title1,
     Title2,
 } from './styles';
+
+import Input from 'components/Input';
+import ButtonCustom from 'components/ButtonCustom';
+
+import { useTheme } from 'styled-components';
 import { useNavigation } from '@react-navigation/native';
 import { ScrollView } from 'react-native';
 
@@ -35,7 +35,7 @@ const ForgotPassword: React.FC = () => {
                     <Input
                         LeftIcon
                         iconName='mail-outline'
-                        iconColor={COLORS.GRAY3}
+                        iconColor={COLORS.GRAY2}
                         iconSize={23}
                         placeholder="Digite seu e-mail"
                     />

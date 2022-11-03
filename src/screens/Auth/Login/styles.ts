@@ -29,6 +29,7 @@ export const Title = styled.Text`
     text-align: center;
     margin-top: ${RFValue(40)}px;
     font-size: ${RFValue(25)}px;
+    color: ${theme.COLORS.PURPLEDARK3};
     font-family: ${theme.FONTS.POPPINSMEDIUM};
 `;
 
@@ -78,6 +79,6 @@ export const ContentButtonForgotPassword = styled(TouchableOpacity)`
 export const ContentTitleForgotPassword = styled.Text`
     text-align: right;
     color: ${theme.COLORS.BLUE2};
-    font-size: 13px;
+    font-size: 14px;
     font-family: ${theme.FONTS.POPPINSREGULAR};
 `;

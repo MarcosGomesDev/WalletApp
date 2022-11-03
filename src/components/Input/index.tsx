@@ -24,7 +24,6 @@ const Input: React.FC<InputProps> = ({
 
     const [secureEntry, setSecureEntry] = useState(secureTextEntry)
 
-    console.log(secureEntry)
     return (
         <Container>
             {LeftIcon && (
@@ -32,7 +31,7 @@ const Input: React.FC<InputProps> = ({
                     name={iconName}
                     size={iconSize}
                     color={iconColor || COLORS.GRAY2}
-                    style={{padding: 5}}
+                    style={{padding: 5, marginTop: -4}}
                 />
             )}
             <InputContainer

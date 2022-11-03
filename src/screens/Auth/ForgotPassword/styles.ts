@@ -18,12 +18,13 @@ export const Title = styled.Text`
     font-size: 25px;
     font-family: ${theme.FONTS.POPPINSMEDIUM};
     margin-top: 80px;
+    color: ${theme.COLORS.PURPLEDARK3}
 `;
 
 export const Description = styled.Text`
     margin-top: 80px;
     font-size: 20px;
-    font-family: ${theme.FONTS.POPPINSBOLD};
+    font-family: ${theme.FONTS.POPPINSMEDIUM};
     margin-bottom: 10px;
 `;
 
@@ -51,6 +52,6 @@ export const Title1 = styled.Text`
 
 export const Title2 = styled.Text`
     font-size: 15px;
-    font-family: ${theme.FONTS.POPPINSBOLD};
+    font-family: ${theme.FONTS.POPPINSMEDIUM};
     color: ${theme.COLORS.BLUE2}
 `;

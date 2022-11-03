@@ -20,6 +20,7 @@ export const Title = styled.Text`
     font-size: 35px;
     margin-top: 40px;
     margin-bottom: 10px;
+    color: ${theme.COLORS.PURPLEDARK3};
     font-family: ${theme.FONTS.POPPINSMEDIUM};
 `;
 
@@ -27,7 +28,7 @@ export const Description = styled.Text`
     font-size: 15px;
     margin-top: 60px;
     margin-bottom: 30px;
-    font-family: ${theme.FONTS.POPPINSEXTRABOLD};
+    font-family: ${theme.FONTS.POPPINSMEDIUM};
 `;
 
 export const ContentBody = styled.View`

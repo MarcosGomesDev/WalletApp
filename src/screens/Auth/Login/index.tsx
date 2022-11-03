@@ -43,13 +43,18 @@ const Login: React.FC = () => {
         >
             <Container>
                 <ContentHeader>
-                    <Title>Seja bem vindo(a) {"\n"} a WalletApp</Title>
+                    <Title>Seja bem vindo(a) {"\n"}a WalletApp</Title>
 
                     <Description>Entrar com:</Description>
 
                     <ViewButton>
-                        <ButtonSocialGoogle title="Google" />
-                        <ButtonSocialFacebook title="Facebook" iconName="facebook" />
+                        <ButtonSocialGoogle
+                            title="Google"
+                        />
+                        <ButtonSocialFacebook
+                            title="Facebook"
+                            iconName="facebook"
+                        />
                     </ViewButton>
                 </ContentHeader>
 
@@ -60,7 +65,7 @@ const Login: React.FC = () => {
                         iconName="mail-outline"
                         autoCapitalize='none'
                         autoCorrect={false}
-                        iconColor={COLORS.GRAY3}
+                        iconColor={COLORS.GRAY2}
                         keyboardType="email-address"
                         placeholder="Digite seu e-mail"
                     />
@@ -71,7 +76,7 @@ const Login: React.FC = () => {
                         autoCorrect={false}
                         keyboardType="default"
                         iconName='lock-closed-outline'
-                        iconColor={COLORS.GRAY3}
+                        iconColor={COLORS.GRAY2}
                         iconSize={25}
                         placeholder="Digite sua senha"
                     />
