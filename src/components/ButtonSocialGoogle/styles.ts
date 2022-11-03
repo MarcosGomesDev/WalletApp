@@ -1,5 +1,5 @@
 import styled from 'styled-components/native';
-
+import theme from 'styles/theme';
 import {TouchableOpacity} from 'react-native';
 import { RFValue } from 'react-native-responsive-fontsize';
 
@@ -14,7 +14,7 @@ export const Button = styled(TouchableOpacity).attrs({
     margin-bottom: 16px;
     border-radius: ${RFValue(10)}px;
     box-shadow: 1px 3px 3px rgba(0,0,0,0.2);
-    background-color: ${({ theme }: any) => theme.COLORS.GRAY6};
+    background-color: ${theme.COLORS.GRAY5};
 `;
 
 export const IconGoogle = styled.Image`

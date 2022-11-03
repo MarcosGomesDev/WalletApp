@@ -16,7 +16,7 @@ interface ButtonProps {
     style?: TouchableOpacityProps['style'];
 }
 
-const Button: React.FC<ButtonProps> = ({
+const ButtonCustom: React.FC<ButtonProps> = ({
     title,
     onPress = () => { },
     isLoading,
@@ -56,4 +56,4 @@ const Button: React.FC<ButtonProps> = ({
     );
 }
 
-export default Button;
+export default ButtonCustom;

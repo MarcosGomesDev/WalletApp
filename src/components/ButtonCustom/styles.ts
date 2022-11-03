@@ -1,9 +1,10 @@
+import styled from 'styled-components/native';
+import theme from 'styles/theme';
 import { TouchableOpacity } from 'react-native';
 import { RFValue } from 'react-native-responsive-fontsize';
-import styled from 'styled-components/native';
 
 export const Container = styled(TouchableOpacity)`
-    background-color: ${({theme}: any) => theme.COLORS.PURPLE1};
+    background-color: ${theme.COLORS.PURPLE1};
     width: 60%;
     height: 65px;
     align-self: center;
@@ -15,7 +16,7 @@ export const Container = styled(TouchableOpacity)`
 
 export const Title = styled.Text`
     font-size: ${RFValue(18)}px;
-    color: ${({theme}: any) => theme.COLORS.WHITE_100};
+    color: ${theme.COLORS.WHITE_100};
 `;
 
 export const Content = styled.View`

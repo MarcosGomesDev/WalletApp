@@ -1,6 +1,7 @@
 import styled from 'styled-components/native'
+import theme from 'styles/theme';
 import { RFValue } from 'react-native-responsive-fontsize';
-import { SafeAreaView, Platform, StatusBar, TouchableOpacity } from 'react-native';
+import { Platform, StatusBar, TouchableOpacity } from 'react-native';
 
 export const Container = styled.SafeAreaView`
     padding: ${RFValue(20)}px;
@@ -45,12 +46,12 @@ export const ButtonSignUp = styled(TouchableOpacity)`
 
 export const TitleButtonSignUp1 = styled.Text`
     font-size: 16px;
-    color: ${({theme}: any) => theme.COLORS.GRAY4}
+    color: ${theme.COLORS.GRAY4}
 `;
 
 export const TitleButtonSignUp2 = styled.Text`
     font-size: 17px;
-    color: ${({theme}: any) => theme.COLORS.BLUE2}
+    color: ${theme.COLORS.BLUE2}
 `;
 
 export const Title = styled.Text`
@@ -72,5 +73,5 @@ export const ContentButtonForgotPassword = styled(TouchableOpacity)`
 
 export const ContentTitleForgotPassword = styled.Text`
     text-align: right;
-    color: ${({theme}: any) => theme.COLORS.BLUE2}
+    color: ${theme.COLORS.BLUE2}
 `;

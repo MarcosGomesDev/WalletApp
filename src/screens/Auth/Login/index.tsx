@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
-import { KeyboardAvoidingView, ScrollView } from 'react-native';
+import { KeyboardAvoidingView } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
 import {useTheme} from 'styled-components'
 import Input from 'components/Input';
 import ButtonCustom from 'components/ButtonCustom';
-import {ButtonSocialGoogle} from 'components/ButtonSocialGoogle';
-import {ButtonSocialFacebook} from 'components/ButtonSocialFacebook';
+import ButtonSocialGoogle from 'components/ButtonSocialGoogle';
+import ButtonSocialFacebook from 'components/ButtonSocialFacebook';
 
 import {
     Container,
@@ -24,6 +25,7 @@ import {
 
 const Login: React.FC = () => {
     const {COLORS} = useTheme()
+    const navigation = useNavigation()
     const [loading, setLoading] = useState(false)
 
     function onPressButton() {
@@ -74,7 +76,7 @@ const Login: React.FC = () => {
                     />
 
                     <ContentForgotPassword>
-                        <ContentButtonForgotPassword onPress={() => {}}>
+                        <ContentButtonForgotPassword onPress={() => navigation.navigate('ForgotPassword')}>
                             <ContentTitleForgotPassword>Esqueceu a senha?</ContentTitleForgotPassword>
                         </ContentButtonForgotPassword>
                     </ContentForgotPassword>
@@ -87,7 +89,7 @@ const Login: React.FC = () => {
                     />
                 </ContentBody>
                 <ContentFooter>
-                    <ButtonSignUp onPress={() => {}}>
+                    <ButtonSignUp onPress={() => navigation.navigate('Register')}>
                         <TitleButtonSignUp1>Não possuí cadastro?</TitleButtonSignUp1>
                         <TitleButtonSignUp2> Cadastre-se</TitleButtonSignUp2>
                     </ButtonSignUp>
@@ -97,4 +99,4 @@ const Login: React.FC = () => {
     );
 }
 
-export {Login};
+export default Login;

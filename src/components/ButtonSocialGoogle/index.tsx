@@ -17,4 +17,4 @@ const ButtonSocialGoogle: React.FC<Props> = ({title}) => {
     );
 }
 
-export {ButtonSocialGoogle};
+export default ButtonSocialGoogle;
