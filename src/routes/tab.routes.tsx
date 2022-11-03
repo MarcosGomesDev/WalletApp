@@ -17,25 +17,19 @@ const TabRoutes: React.FC = () => {
             initialRouteName='Wallet'
             screenOptions={{
                 headerShown: false,
-                tabBarShowLabel: true,
+                tabBarShowLabel: false,
                 tabBarInactiveTintColor: theme.COLORS.GRAY4,
                 tabBarActiveTintColor: theme.COLORS.GRAY1,
                 tabBarStyle: {
                     paddingBottom: 7,
                     backgroundColor: theme.COLORS.PURPLEDARK3
                 },
-                tabBarLabelStyle: {
-                    fontSize: 11,
-                    color: theme.COLORS.GRAY3
-                }
             }}
         >
             <Screen
                 name="Wallet"
                 component={WalletTab}
                 options={{
-                    tabBarLabel: "Home",
-                    tabBarLabelStyle: {color: theme.COLORS.WHITE},
                     tabBarIcon: ({focused}) => (
                         <View
                             style={{
@@ -57,8 +51,6 @@ const TabRoutes: React.FC = () => {
                 name="Report"
                 component={Report}
                 options={{
-                    tabBarLabel: "Relatório",
-                    tabBarLabelStyle: {color: theme.COLORS.WHITE},
                     tabBarIcon: ({focused}) => (
                         <View
                             style={{
@@ -80,8 +72,6 @@ const TabRoutes: React.FC = () => {
                 name="Notification"
                 component={Notification}
                 options={{
-                    tabBarLabel: "Notificações",
-                    tabBarLabelStyle: {color: theme.COLORS.WHITE},
                     tabBarIcon: ({focused}) => (
                         <View
                             style={{
@@ -103,8 +93,6 @@ const TabRoutes: React.FC = () => {
                 name="Settings"
                 component={Settings}
                 options={{
-                    tabBarLabel: "Configurações",
-                    tabBarLabelStyle: {color: theme.COLORS.WHITE},
                     tabBarIcon: ({focused}) => (
                         <View
                             style={{

@@ -114,5 +114,8 @@ export default {
         TITLE: 'DMSerifDisplay-Regular',
         POPPINSREGULAR: 'Poppins-Regular',
         POPPINSEXTRABOLD: 'Poppins-ExtraBold',
+        RUBIKMEDIUM: 'Rubick500Medium',
+        QUICKSANDMEDIUM: 'Quicksand500Medium',
+        QUICKSANDBOLD: 'Quicksand700Bold'
     },
 };

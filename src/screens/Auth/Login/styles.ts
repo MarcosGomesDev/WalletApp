@@ -30,7 +30,7 @@ export const Title = styled.Text`
     margin-top: ${RFValue(40)}px;
     font-size: ${RFValue(25)}px;
     color: ${theme.COLORS.PURPLEDARK3};
-    font-family: ${theme.FONTS.POPPINSMEDIUM};
+    font-family: ${theme.FONTS.RUBIKMEDIUM};
 `;
 
 export const Description = styled.Text`
@@ -38,7 +38,7 @@ export const Description = styled.Text`
     margin-top: ${RFValue(60)}px;
     font-size: ${RFValue(17)}px;
     margin-bottom: ${RFValue(30)}px;
-    font-family: ${theme.FONTS.POPPINSLIGHT};
+    font-family: ${theme.FONTS.QUICKSANDMEDIUM};
 `;
 
 export const ContentFooter = styled.View`
@@ -56,13 +56,13 @@ export const ButtonSignUp = styled(TouchableOpacity)`
 
 export const TitleButtonSignUp1 = styled.Text`
     font-size: 14px;
-    font-family: ${theme.FONTS.POPPINSMEDIUM};
+    font-family: ${theme.FONTS.QUICKSANDMEDIUM};
     color: ${theme.COLORS.GRAY4};
 `;
 
 export const TitleButtonSignUp2 = styled.Text`
     font-size: 15px;
-    font-family: ${theme.FONTS.POPPINSMEDIUM};
+    font-family: ${theme.FONTS.QUICKSANDMEDIUM};
     color: ${theme.COLORS.BLUE2};
 `;
 
@@ -80,5 +80,5 @@ export const ContentTitleForgotPassword = styled.Text`
     text-align: right;
     color: ${theme.COLORS.BLUE2};
     font-size: 14px;
-    font-family: ${theme.FONTS.POPPINSREGULAR};
+    font-family: ${theme.FONTS.QUICKSANDMEDIUM};
 `;

@@ -27,6 +27,6 @@ export const IconFacebook = styled(Icon)`
 export const Title = styled.Text`
     color: ${theme.COLORS.WHITE};
     font-size: ${RFValue(17)}px;
-    font-family: ${theme.FONTS.POPPINSLIGHT};
+    font-family: ${theme.FONTS.QUICKSANDMEDIUM};
     margin-left: ${RFValue(10)}px;
 `;
