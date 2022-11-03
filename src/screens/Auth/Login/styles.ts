@@ -15,6 +15,7 @@ export const ContentHeader = styled.View`
 `;
 
 export const ContentBody = styled.View`
+    margin-top: 30px;
 `;
 
 export const ViewButton = styled.View`
@@ -28,7 +29,7 @@ export const Description = styled.Text`
     text-align: center;
     margin-top: ${RFValue(60)}px;
     font-size: ${RFValue(17)}px;
-    margin-bottom: ${RFValue(10)}px;
+    margin-bottom: ${RFValue(30)}px;
 `;
 
 export const ContentFooter = styled.View`
@@ -57,12 +58,11 @@ export const TitleButtonSignUp2 = styled.Text`
 export const Title = styled.Text`
     text-align: center;
     margin-top: ${RFValue(40)}px;
-    font-size: ${RFValue(25)}px
+    font-size: ${RFValue(25)}px;
 `;
 
 export const ContentForgotPassword = styled.View`
-    margin-top: 5px;
-    margin: 5px 10px 0 10px
+    margin: 15px 10px 5px 10px
 `;
 
 export const ContentButtonForgotPassword = styled(TouchableOpacity)`

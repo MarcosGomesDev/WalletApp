@@ -12,7 +12,7 @@ const {Navigator, Screen} = createNativeStackNavigator()
 const AuthRoutes: React.FC = () => {
     return (
         <Navigator
-            initialRouteName='Register'
+            initialRouteName='ForgotPassword'
             screenOptions={{
                 headerShown: false
             }}

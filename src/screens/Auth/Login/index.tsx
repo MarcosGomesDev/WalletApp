@@ -60,7 +60,7 @@ const Login: React.FC = () => {
                         iconName="mail-outline"
                         autoCapitalize='none'
                         autoCorrect={false}
-                        iconColor={COLORS.TEXTDARK}
+                        iconColor={COLORS.GRAY3}
                         keyboardType="email-address"
                         placeholder="Digite seu e-mail"
                     />
@@ -71,6 +71,7 @@ const Login: React.FC = () => {
                         autoCorrect={false}
                         keyboardType="default"
                         iconName='lock-closed-outline'
+                        iconColor={COLORS.GRAY3}
                         iconSize={25}
                         placeholder="Digite sua senha"
                     />
