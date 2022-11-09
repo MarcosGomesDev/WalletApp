@@ -9,11 +9,11 @@ import Notification from 'screens/Tab/Notification';
 import Report from 'screens/Tab/Report';
 import Settings from 'screens/Tab/Settings';
 
-const {Navigator, Screen} = createBottomTabNavigator()
+const Tab = createBottomTabNavigator()
 
 const TabRoutes: React.FC = () => {
     return (
-        <Navigator
+        <Tab.Navigator
             initialRouteName='Wallet'
             screenOptions={{
                 headerShown: false,
@@ -22,11 +22,17 @@ const TabRoutes: React.FC = () => {
                 tabBarActiveTintColor: theme.COLORS.GRAY1,
                 tabBarStyle: {
                     paddingBottom: 7,
-                    backgroundColor: theme.COLORS.PURPLEDARK3
+                    backgroundColor: theme.COLORS.PURPLEDARK3,
+                    position: 'absolute',
+                    bottom: 25,
+                    left: 20,
+                    right: 20,
+                    height: 70,
+                    borderRadius: 30,
                 },
             }}
         >
-            <Screen
+            <Tab.Screen
                 name="Wallet"
                 component={WalletTab}
                 options={{
@@ -47,7 +53,7 @@ const TabRoutes: React.FC = () => {
                     )
                 }}
             />
-            <Screen
+            <Tab.Screen
                 name="Report"
                 component={Report}
                 options={{
@@ -68,7 +74,7 @@ const TabRoutes: React.FC = () => {
                     )
                 }}
             />
-            <Screen
+            <Tab.Screen
                 name="Notification"
                 component={Notification}
                 options={{
@@ -89,7 +95,7 @@ const TabRoutes: React.FC = () => {
                     )
                 }}
             />
-            <Screen
+            <Tab.Screen
                 name="Settings"
                 component={Settings}
                 options={{
@@ -110,7 +116,7 @@ const TabRoutes: React.FC = () => {
                     )
                 }}
             />
-        </Navigator>
+        </Tab.Navigator>
     );
 }
 

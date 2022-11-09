@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text } from 'react-native';
+
 import {
     Container,
     CardContainer,
@@ -9,15 +9,44 @@ import {
     TitleValorConta,
     ContainerCard,
     TitleCard,
-    TitleNameCard
+    TitleNameCard,
+    ContentBody,
+    IconPayment,
+    IconTransfer,
+    IconPayOut,
+    IconTopUp,
+    ButtonOption,
+    TitleButton,
+    ContentFooter,
+    ContentFlat,
+    ContentFlatHeader,
+    Title,
+    ButtonShowAll,
+    ButtonTitle,
+    ContentFlatFooter,
+    IconTransaction,
+    DetailsTransaction,
+    NameTransaction,
+    SubTitleTransaction,
+    AmountTransaction,
 } from './styles';
 
 import Header from 'components/Header';
+import Transfer from 'assets/convert.png';
+import Payments from 'assets/export.png';
+import Payout from 'assets/money-send.png';
+import TopUp from 'assets/add-circle.png';
+import { transaction } from 'utils/transactions';
+import { FlatList, TouchableOpacity, View } from 'react-native';
 
 const Wallet: React.FC = () => {
     return (
         <Container>
-            <Header />
+            <Header
+                appName='Wallet'
+                status
+                avatar
+            />
 
             <CardContainer>
                 <Content>
@@ -32,6 +61,51 @@ const Wallet: React.FC = () => {
                     </ContainerCard>
                 </Content>
             </CardContainer>
+
+            <ContentBody>
+                <ButtonOption>
+                    <IconTransfer source={Transfer} />
+                    <TitleButton>Transferir</TitleButton>
+                </ButtonOption>
+                <ButtonOption>
+                    <IconPayment source={Payments} />
+                    <TitleButton>Pagar</TitleButton>
+                </ButtonOption>
+                <ButtonOption>
+                    <IconPayOut source={Payout} />
+                    <TitleButton>Pagamentos</TitleButton>
+                </ButtonOption>
+                <ButtonOption>
+                    <IconTopUp source={TopUp} />
+                    <TitleButton>Mais opções</TitleButton>
+                </ButtonOption>
+            </ContentBody>
+
+            <ContentFooter>
+                <FlatList
+                    data={transaction.slice(0, 3)}
+                    ListHeaderComponent={
+                        <ContentFlatHeader>
+                            <Title>Minhas transações</Title>
+                            <ButtonShowAll>
+                                <ButtonTitle>Ver Todos</ButtonTitle>
+                            </ButtonShowAll>
+                        </ContentFlatHeader>
+                    }
+                    renderItem={({item}) => (
+                        <ContentFlat>
+                            <ContentFlatFooter>
+                                <IconTransaction source={item.icon} />
+                                <DetailsTransaction>
+                                    <NameTransaction>{item.title}</NameTransaction>
+                                    <SubTitleTransaction>{item.subtitle}</SubTitleTransaction>
+                                </DetailsTransaction>
+                                <AmountTransaction>R$ {item.amount}</AmountTransaction>
+                            </ContentFlatFooter>
+                        </ContentFlat>
+                    )}
+                />
+            </ContentFooter>
         </Container>
     );
 }

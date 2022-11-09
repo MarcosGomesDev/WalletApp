@@ -35,6 +35,7 @@ export default {
         PURPLE2: '#BB6BD9',
         PURPLE1: '#9B51E0',
         PURPLE: '#9038FF',
+        PURPLELIGHT: '#8438FF',
         PURPLEDARK1: '#6E34B8',
         PURPLEDARK2: '#5B259F',
         PURPLEDARK3: '#2F1155',

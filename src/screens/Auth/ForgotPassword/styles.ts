@@ -18,7 +18,7 @@ export const Title = styled.Text`
     font-size: 25px;
     font-family: ${theme.FONTS.POPPINSMEDIUM};
     margin-top: 80px;
-    color: ${theme.COLORS.PURPLEDARK3}
+    color: ${theme.COLORS.PURPLEDARK3};
 `;
 
 export const Description = styled.Text`
@@ -47,7 +47,7 @@ export const ButtonGoBack = styled(TouchableOpacity)`
 export const Title1 = styled.Text`
     font-size: 14px;
     font-family: ${theme.FONTS.POPPINSMEDIUM};
-    color: ${theme.COLORS.GRAY3}
+    color: ${theme.COLORS.GRAY3};
 `;
 
 export const Title2 = styled.Text`
