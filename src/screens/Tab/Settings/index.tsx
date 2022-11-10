@@ -1,6 +1,6 @@
 import React from 'react';
 
-import ButtonOption from './ButtonOption';
+import ButtonOption from '../../../components/ButtonOption';
 
 import {
     Container,
@@ -22,32 +22,37 @@ const Settings: React.FC = () => {
             <Container>
                 <ButtonOption
                     title="Perfil"
-                    onPress={() => { }}
+                    onPress={() => navigation.navigate('Profile')}
                     iconName="person-outline"
+                    icon
                 />
 
                 <ButtonOption
                     title="Notificações"
                     onPress={() => { }}
                     iconName="notifications-outline"
+                    icon
                 />
 
                 <ButtonOption
                     title="Sua carteira"
                     onPress={() => { }}
                     iconName="wallet-outline"
+                    icon
                 />
 
                 <ButtonOption
                     title="Configurações de login"
                     onPress={() => { }}
                     iconName="key-outline"
+                    icon
                 />
 
                 <ButtonOption
                     title="Central de serviços"
                     onPress={() => { }}
                     iconName="call-outline"
+                    icon
                 />
 
                 <Footer>

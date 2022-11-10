@@ -8,7 +8,7 @@ export const Container = styled.View`
 `;
 
 export const Footer = styled.View`
-    margin-top: 60px;
+    margin-top: 40px;
     align-items: center;
     justify-content: center;
 `;

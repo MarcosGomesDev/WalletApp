@@ -19,12 +19,14 @@ const ButtonOut: React.FC<ButtonProps> = ({
     const {COLORS} = useTheme()
 
     return (
+        <>
         <Button onPress={onPress}>
             <IconContainer>
                 <Ionicons name={iconName} size={34} color={COLORS.PURPLEDARK2} />
             </IconContainer>
-            <Title>{title}</Title>
         </Button>
+        <Title>{title}</Title>
+        </>
     );
 }
 

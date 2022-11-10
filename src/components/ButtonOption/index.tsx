@@ -9,22 +9,26 @@ import { Button, IconContainer, ViewRight, Title } from './styles';
 
 interface ButtonProps {
     title: string;
-    iconName: React.ComponentProps<typeof Ionicons>["name"]
+    iconName?: React.ComponentProps<typeof Ionicons>["name"],
+    icon?: boolean,
     onPress: () => void;
 }
 
 const ButtonOption: React.FC<ButtonProps> = ({
     title,
     iconName,
+    icon,
     onPress = () => {},
 }) => {
     const { COLORS } = useTheme()
 
     return (
         <Button onPress={onPress}>
-            <IconContainer>
-                <Ionicons name={iconName} size={30} color={COLORS.PURPLEDARK3} />
-            </IconContainer>
+            {icon && (
+                <IconContainer>
+                    <Ionicons name={iconName} size={30} color={COLORS.PURPLEDARK3} />
+                </IconContainer>
+            )}
             <ViewRight>
                 <Title>{title}</Title>
                 <Ionicons name="chevron-forward-outline" size={28} color={COLORS.PURPLEDARK3} />
