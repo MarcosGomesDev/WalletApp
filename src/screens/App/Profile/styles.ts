@@ -10,6 +10,7 @@ export const Header = styled.View`
     width: 100%;
     align-items: center;
     justify-content: center;
+    
 `;
 
 export const Content = styled.View`

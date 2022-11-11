@@ -65,19 +65,19 @@ const Wallet: React.FC = () => {
             <ContentBody>
                 <ButtonOption>
                     <IconTransfer source={Transfer} />
-                    <TitleButton>Transferir</TitleButton>
+                    <TitleButton>Transf.</TitleButton>
                 </ButtonOption>
                 <ButtonOption>
                     <IconPayment source={Payments} />
-                    <TitleButton>Pagar</TitleButton>
+                    <TitleButton>Forma Pagto.</TitleButton>
                 </ButtonOption>
                 <ButtonOption>
                     <IconPayOut source={Payout} />
-                    <TitleButton>Pagamentos</TitleButton>
+                    <TitleButton>Pagtos</TitleButton>
                 </ButtonOption>
                 <ButtonOption>
                     <IconTopUp source={TopUp} />
-                    <TitleButton>Mais opções</TitleButton>
+                    <TitleButton>Add Cartão</TitleButton>
                 </ButtonOption>
             </ContentBody>
 

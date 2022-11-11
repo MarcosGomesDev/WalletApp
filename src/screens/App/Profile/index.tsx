@@ -42,21 +42,26 @@ const Profile = () => {
                 <Content>
                     <ButtonOption
                         title='Connected Account'
+                        onPress={() => {}}
                     />
                     <ButtonOption
                         title='Privacy and security'
+                        onPress={() => {}}
                     />
                     <ButtonOption
                         title='Login Settings'
+                        onPress={() => {}}
                     />
                     <ButtonOption
                         title='Service Center'
+                        onPress={() => {}}
                     />
                 </Content>
                 <Footer>
                     <ButtonOut
-                        iconName="trash-outline"
                         title="Deletar Conta"
+                        iconName="trash-outline"
+                        onPress={() => {}}
                     />
                 </Footer>
             </Container>
