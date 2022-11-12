@@ -6,6 +6,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import TabRoutes from './tab.routes';
 import Profile from 'screens/App/Profile';
 import AddCart from 'screens/App/AddCart';
+import DetailsCard from 'screens/App/DetailsCard';
 
 const {Navigator, Screen} = createNativeStackNavigator()
 
@@ -20,6 +21,7 @@ const AppRoutes: React.FC = () => {
             <Screen name="TabRoutes" component={TabRoutes} />
             <Screen name="Profile" component={Profile} />
             <Screen name="AddCart" component={AddCart} />
+            <Screen name="DetailsCard" component={DetailsCard} />
         </Navigator>
     );
 }

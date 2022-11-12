@@ -48,11 +48,11 @@ const buttonOutLine: ButtonVariant = {
     enabled: {
         button: {
             backgroundColor: 'transparent',
-            borderWidth: 2,
-            borderColor: theme.COLORS.PRIMARY,
+            // borderWidth: 2,
+            // borderColor: theme.COLORS.PRIMARY,
         },
         title: {
-            color: theme.COLORS.GRAY1,
+            color: theme.COLORS.PURPLEDARK2,
         },
         icon: {
             color: theme.COLORS.GRAY1,
@@ -65,7 +65,7 @@ const buttonOutLine: ButtonVariant = {
             borderColor: theme.COLORS.PRIMARY,
         },
         title: {
-            color: theme.COLORS.GRAY_100,
+            color: theme.COLORS.PURPLEDARK2,
         },
         icon: {
             color: theme.COLORS.GRAY_100,

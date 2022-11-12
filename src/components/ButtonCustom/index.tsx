@@ -23,7 +23,8 @@ const ButtonCustom: React.FC<ButtonProps> = ({
     iconName,
     disabled,
     variant = 'primary',
-    style
+    style,
+    ...rest
 }) => {
     const {COLORS} = useTheme()
     const buttonVariant = variants[variant]
@@ -31,6 +32,7 @@ const ButtonCustom: React.FC<ButtonProps> = ({
 
     return (
         <Container
+            {...rest}
             onPress={onPress}
             disabled={isLoading || disabled}
             style={[buttonStyle.button, style]}
@@ -51,7 +53,7 @@ const ButtonCustom: React.FC<ButtonProps> = ({
                     )}
                 </Content>
             )}
-            <Title>{title}</Title>
+            <Title style={{color: buttonStyle.title.color}}>{title}</Title>
         </Container>
     );
 }

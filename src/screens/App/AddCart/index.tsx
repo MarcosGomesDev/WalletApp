@@ -28,7 +28,7 @@ const AddCart: React.FC = () => {
                     <Title>Adicionar cartão</Title>
                 </Header>
                 <ButtonAddCard
-                    onPress={() => navigation.navigate('Profile')}
+                    onPress={() => navigation.navigate('DetailsCard')}
                 >
                 <Content
                     source={Card}

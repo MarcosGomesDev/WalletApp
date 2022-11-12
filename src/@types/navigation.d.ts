@@ -6,7 +6,8 @@ export declare global {
             ForgotPassword: undefined,
             Notification: undefined,
             Profile: undefined,
-            AddCart: undefined
+            AddCart: undefined,
+            DetailsCard: undefined,
         }
     }
 }

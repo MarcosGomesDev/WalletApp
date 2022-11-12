@@ -17,12 +17,13 @@ export const Header = styled.View`
 export const Title = styled.Text`
     font-family: ${theme.FONTS.RUBIKMEDIUM};
     font-size: 24px;
+    font-weight: bold;
     color: ${theme.COLORS.PURPLEDARK3};
     text-align: center;
 `;
 
 export const ButtonAddCard = styled.TouchableOpacity`
-    
+
 `;
 
 export const Content = styled.ImageBackground`
