@@ -9,8 +9,8 @@ import { Button, IconContainer, ViewRight, Title } from './styles';
 
 interface ButtonProps {
     title: string;
-    iconName?: React.ComponentProps<typeof Ionicons>["name"],
-    icon?: boolean,
+    iconName?: React.ComponentProps<typeof Ionicons>["name"];
+    icon?: boolean;
     onPress: () => void;
 }
 
@@ -18,7 +18,7 @@ const ButtonOption: React.FC<ButtonProps> = ({
     title,
     iconName,
     icon,
-    onPress = () => {},
+    onPress = () => { },
 }) => {
     const { COLORS } = useTheme()
 

@@ -38,8 +38,11 @@ import Payout from 'assets/money-send.png';
 import TopUp from 'assets/add-circle.png';
 import { transaction } from 'utils/transactions';
 import { FlatList, TouchableOpacity, View } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
 
 const Wallet: React.FC = () => {
+    const navigation = useNavigation()
+
     return (
         <Container>
             <Header
@@ -75,7 +78,9 @@ const Wallet: React.FC = () => {
                     <IconPayOut source={Payout} />
                     <TitleButton>Pagtos</TitleButton>
                 </ButtonOption>
-                <ButtonOption>
+                <ButtonOption
+                    onPress={() => navigation.navigate('AddCart')}
+                >
                     <IconTopUp source={TopUp} />
                     <TitleButton>Add Cartão</TitleButton>
                 </ButtonOption>
