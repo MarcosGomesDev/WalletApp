@@ -11,6 +11,11 @@ export const Container = styled.View`
     flex-direction: row;
 `;
 
+export const IconButton = styled.TouchableOpacity`
+    width: 40px;
+    
+`;
+
 export const ContentHeader = styled.View`
     padding: 10px;
     justify-content: center;
