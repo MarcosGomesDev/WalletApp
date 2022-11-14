@@ -35,23 +35,23 @@ const DetailsCard: React.FC = () => {
 
                 <ViewDetails>
                     <ViewItem>
-                        <InfoTitle>Name</InfoTitle>
+                        <InfoTitle>Nome</InfoTitle>
                         <Name>Marcos Gomes</Name>
                     </ViewItem>
                     <ViewItem>
-                        <InfoTitle>Bank</InfoTitle>
+                        <InfoTitle>Banco</InfoTitle>
                         <Bank>Mabank</Bank>
                     </ViewItem>
                     <ViewItem>
-                        <InfoTitle>Card Number</InfoTitle>
+                        <InfoTitle>Número do cartão</InfoTitle>
                         <Account>.... .... .... 2138</Account>
                     </ViewItem>
                     <ViewItem>
                         <InfoTitle>Status</InfoTitle>
-                        <Status>Active</Status>
+                        <Status>Ativo</Status>
                     </ViewItem>
                     <ViewItem>
-                        <InfoTitle>Valid</InfoTitle>
+                        <InfoTitle>Validade</InfoTitle>
                         <Valid>2020 - 2025</Valid>
                     </ViewItem>
                 </ViewDetails>
