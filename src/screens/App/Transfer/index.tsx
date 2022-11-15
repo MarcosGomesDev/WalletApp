@@ -3,6 +3,7 @@ import ButtonCustom from 'components/ButtonCustom';
 import GoBackButton from 'components/GoBackButton';
 import { Backspace, CaretDown } from 'phosphor-react-native';
 import React, { useState } from 'react';
+import { Alert } from 'react-native';
 
 import {
     Container,
@@ -30,6 +31,14 @@ const Transfer: React.FC = () => {
         setModalVisible(false)
     }
 
+    const transfer = () => {
+        if(bank === '') {
+            Alert.alert('Erro', 'Selecione o banco')
+        } else {
+            Alert.alert('Success', 'tranferência concluída')
+        }
+    }
+
     return (
         <>
             <GoBackButton />
@@ -43,7 +52,9 @@ const Transfer: React.FC = () => {
                     <ButtonOptionBank
                         onPress={() => setModalVisible(!modalVisible)}
                     >
-                        <Title>{bank || 'Selecione um banco'}</Title>
+                        <Title>
+                            {bank || 'Selecione um banco'}
+                        </Title>
                         <CaretDown size={24} weight="light" />
                     </ButtonOptionBank>
                     <BanksModal
@@ -192,7 +203,7 @@ const Transfer: React.FC = () => {
                 </ViewKeyboard>
                 <ButtonCustom
                     title='Transferir'
-                    onPress={() => { }}
+                    onPress={() => transfer()}
                 />
             </Container>
         </>

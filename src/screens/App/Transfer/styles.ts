@@ -25,8 +25,9 @@ export const ButtonOptionBank = styled(TouchableOpacity)`
 
 export const Title = styled.Text`
     text-align: left;
-    font-size: 16px;
+    font-size: 18px;
     font-family: ${theme.FONTS.QUICKSANDMEDIUM};
+    font-weight: 600;
 `;
 
 export const ViewValue = styled.View`
