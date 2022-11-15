@@ -66,7 +66,9 @@ const Wallet: React.FC = () => {
             </CardContainer>
 
             <ContentBody>
-                <ButtonOption>
+                <ButtonOption
+                    onPress={() => navigation.navigate('Transfer')}
+                >
                     <IconTransfer source={Transfer} />
                     <TitleButton>Transf.</TitleButton>
                 </ButtonOption>

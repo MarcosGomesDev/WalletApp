@@ -8,6 +8,7 @@ export declare global {
             Profile: undefined,
             AddCart: undefined,
             DetailsCard: undefined,
+            Transfer: undefined,
         }
     }
 }

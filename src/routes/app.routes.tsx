@@ -7,6 +7,7 @@ import TabRoutes from './tab.routes';
 import Profile from 'screens/App/Profile';
 import AddCart from 'screens/App/AddCart';
 import DetailsCard from 'screens/App/DetailsCard';
+import Transfer from 'screens/App/Transfer';
 
 const {Navigator, Screen} = createNativeStackNavigator()
 
@@ -22,6 +23,7 @@ const AppRoutes: React.FC = () => {
             <Screen name="Profile" component={Profile} />
             <Screen name="AddCart" component={AddCart} />
             <Screen name="DetailsCard" component={DetailsCard} />
+            <Screen name="Transfer" component={Transfer} />
         </Navigator>
     );
 }
