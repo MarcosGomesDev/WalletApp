@@ -30,6 +30,7 @@ export default {
         GRAY3: '#828282',
         GRAY2: '#4F4F4F',
         GRAY1: '#333333',
+        SPECIALGRAY: '#363853',
 
         PINK: '#D71CDB',
         PURPLE2: '#BB6BD9',
